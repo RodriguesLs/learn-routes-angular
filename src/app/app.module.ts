@@ -8,6 +8,7 @@ import { MaterializeModule } from 'angular2-materialize';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CoursesComponent } from './courses/courses.component';
+import { CourseDetailComponent } from './courses/course-detail/course-detail.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CoursesComponent } from './courses/courses.component';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    CoursesComponent
+    CoursesComponent,
+    CourseDetailComponent
   ],
   imports: [
     BrowserModule,
