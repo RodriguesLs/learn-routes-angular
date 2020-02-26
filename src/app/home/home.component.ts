@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import 'materialize-css'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
