@@ -9,7 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CourseDetailComponent } from './courses/course-detail/course-detail.component';
-
+import { CoursesService } from './courses/courses.service';
+import { CourseNotFoundComponent } from './course-not-found/course-not-found.component'
 
 @NgModule({
   declarations: [
@@ -17,14 +18,17 @@ import { CourseDetailComponent } from './courses/course-detail/course-detail.com
     HomeComponent,
     LoginComponent,
     CoursesComponent,
-    CourseDetailComponent
+    CourseDetailComponent,
+    CourseNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterializeModule
   ],
-  providers: [],
+  providers: [
+    CoursesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
